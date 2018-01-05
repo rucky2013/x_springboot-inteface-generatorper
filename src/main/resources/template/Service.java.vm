@@ -1,0 +1,47 @@
+package ${package}.${moduleName}.service;
+
+import com.suke.czx.modules.app.service.ServiceSupport;
+import org.springframework.stereotype.Service;
+import java.util.HashMap;
+import java.util.List;
+
+/**
+ * ${comments}
+ * 
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Service("${classname}Service")
+public class  ${className}Service extends  ServiceSupport{
+
+
+    public HashMap<String,Object> queryObject(HashMap<String,Object> param) throws Exception{
+        return findForObject("${moduleName}.${className}Dao.queryObject",param);
+    }
+
+
+    public List<HashMap<String,Object>> queryList(HashMap<String,Object> param) throws Exception{
+        return findForList("${moduleName}.${className}Dao.queryList",param);
+    }
+
+
+    public void saveInfo(HashMap<String,Object> param) throws Exception{
+        insert("${moduleName}.${className}Dao.save",param);
+    }
+
+
+    public void updateInfo(HashMap<String,Object> param) throws Exception{
+        update("${moduleName}.${className}Dao.update",param);
+    }
+
+
+    public void deleteInfo(HashMap<String,Object> param) throws Exception{
+        delete("${moduleName}.${className}Dao.delete",param);
+    }
+
+
+    public void deleteBatch(HashMap<String,Object> param) throws Exception{
+        delete("${moduleName}.${className}Dao.deleteBatch",param);
+    }
+}
