@@ -1,0 +1,2 @@
+# x_springboot-inteface-generatorper
+x_springboot-inteface-generator是X-SpringBoot项目的代码生成器，可在线生成一个模块的代码，减少90%以上的开发任务，复杂逻辑或多表关联只须要修改mapper.xml，一个模块只须1秒
